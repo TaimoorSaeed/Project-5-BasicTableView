@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="o3J-Zf-XBm">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="qCa-SV-55D">
+            <objects>
+                <viewController id="o3J-Zf-XBm" customClass="ViewController" customModule="Project_5_BasicTableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="UKF-z4-sBc"/>
+                        <viewControllerLayoutGuide type="bottom" id="vrz-9R-oSY"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iZJ-aF-yXk">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1uW-Cl-CVq">
+                                <rect key="frame" x="0.0" y="30" width="320" height="44"/>
+                                <items>
+                                    <navigationItem title="Movies" id="WEU-ef-sOX">
+                                        <barButtonItem key="leftBarButtonItem" title="Edit" id="w25-iV-taW"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="WeS-yC-jgI">
+                                <rect key="frame" x="0.0" y="74" width="320" height="494"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="WeS-yC-jgI" firstAttribute="leading" secondItem="iZJ-aF-yXk" secondAttribute="leading" id="Hda-W4-Bdk"/>
+                            <constraint firstItem="WeS-yC-jgI" firstAttribute="top" secondItem="1uW-Cl-CVq" secondAttribute="bottom" id="MkW-9f-xyV"/>
+                            <constraint firstItem="WeS-yC-jgI" firstAttribute="top" secondItem="1uW-Cl-CVq" secondAttribute="bottom" id="PzT-HN-nA0"/>
+                            <constraint firstItem="vrz-9R-oSY" firstAttribute="top" secondItem="WeS-yC-jgI" secondAttribute="bottom" id="WJm-Qr-Hmg"/>
+                            <constraint firstAttribute="trailing" secondItem="WeS-yC-jgI" secondAttribute="trailing" id="XfS-uV-NiH"/>
+                            <constraint firstItem="1uW-Cl-CVq" firstAttribute="top" secondItem="UKF-z4-sBc" secondAttribute="bottom" constant="10" id="Z4X-gY-yrU"/>
+                            <constraint firstAttribute="trailing" secondItem="1uW-Cl-CVq" secondAttribute="trailing" id="sgR-wp-Z0x"/>
+                            <constraint firstItem="1uW-Cl-CVq" firstAttribute="leading" secondItem="iZJ-aF-yXk" secondAttribute="leading" id="upA-De-wdq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="WeS-yC-jgI" id="D9Y-vW-feI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UWc-ET-0jw" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="525" y="-19.014084507042252"/>
+        </scene>
+    </scenes>
+</document>
